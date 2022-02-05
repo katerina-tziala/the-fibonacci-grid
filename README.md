@@ -3,7 +3,7 @@
 The Fibonacci Grid is a single player puzzle game based on the [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_number).
 
 <p align="center">
-    <img src="https://github.com/katerina-tziala/the-fibonacci-grid/blob/master/the-fibonnacci-grid.png" alt="the fibonacci grid overview" width="80%" height="auto">
+    <img src="https://github.com/katerina-tziala/the-fibonacci-grid/blob/master/the-fibonnacci-grid.png" alt="the fibonacci grid overview" width="90%" height="auto">
 </p>
 
 
