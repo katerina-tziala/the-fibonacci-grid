@@ -1,0 +1,47 @@
+@use "../utils/utils";
+@use "./shadows";
+
+@mixin setBackground($color) {
+  background: var(#{$color})
+    radial-gradient(circle, transparent 1%, var(#{$color}) 1%) center/15000%;
+}
+
+@mixin setBackgroundAnimation($color: "--button-primary-animated-bg-color") {
+  transition: background 0.3s linear;
+  &:active {
+    background-color: var(#{$color});
+    background-size: 100%;
+    transition: background 0s;
+    box-shadow: none;
+  }
+}
+
+.button {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  user-select: none;
+
+  &[aria-disabled="true"] {
+    @extend .disabled;
+  }
+
+  &[aria-disabled="false"] {
+    cursor: pointer;
+  }
+}
+
+.button-primary {
+  @extend .button;
+  @include setBackground("--button-bg-color");
+  color: var(--background);
+  &[aria-disabled="false"] {
+    &:hover,
+    &:focus {
+      color: var(--primary-contrast-color);
+      @include setBackground("--button-primary-bg-color");
+      @extend .box-shadow;
+    }
+    @include setBackgroundAnimation();
+  }
+}

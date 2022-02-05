@@ -1,0 +1,12 @@
+@use "../utils/flexbox";
+@use "./shadows";
+
+.card {
+  padding: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--primary-contrast-color);
+  color: var(--font-color);
+  @extend .box-shadow-darker;
+}

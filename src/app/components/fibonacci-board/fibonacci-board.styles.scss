@@ -1,0 +1,42 @@
+@use "styles/shared/button";
+
+@use "./styles/utils/flexbox";
+@import "styles/shared/card";
+
+$optionsHeight: 50px;
+
+:host {
+  display: block;
+  max-width: 100%;
+  width: fit-content;
+  height: 100%;
+  padding: 10px;
+  @extend .card;
+}
+
+.points-container {
+  font-weight: 400;
+  font-family: var(--font);
+  font-size: 1.3rem;
+  padding: 0.4rem 0;
+  user-select: none;
+}
+
+.board-options {
+  height: $optionsHeight;
+  @extend %flex-between-start;
+
+  .restart-btn {
+    @extend .button-primary;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-weight: 400;
+    font-family: var(--font);
+  }
+}
+
+.grid {
+  max-height: calc(100% - $optionsHeight);
+}

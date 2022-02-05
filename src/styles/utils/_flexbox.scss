@@ -1,0 +1,27 @@
+%flexbox {
+  display: flex;
+}
+
+%flex-start-center {
+  @extend %flexbox;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+%flex-center-center {
+  @extend %flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-between-center {
+  @extend %flexbox;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-between-start {
+  @extend %flexbox;
+  justify-content: space-between;
+  align-items: start;
+}

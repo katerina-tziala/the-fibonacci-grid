@@ -1,0 +1,74 @@
+@import "./styles/typography/typography-font-face";
+@import "./styles/utils/flexbox";
+@import "./styles/shared/shadows";
+
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  // variables
+  --font: "Nunito", sans-serif;
+  --padding: 0.7em;
+  --header-height: 56px;
+  // colors
+  --background: #e2e8f0;
+  --primary-color: #0f172a;
+  --primary-contrast-color: #f8fafc;
+  // buttons
+  --button-bg-color: #1e293b;
+  --button-primary-bg-color: #0f172a;
+  --button-primary-animated-bg-color: #cbd5e1;
+  // shadows
+  --shadow-color: rgba(30, 41, 59, 0.3);
+  --shadow-color-ambient: rgba(30, 41, 59, 0.15);
+  --shadow-color-dark: rgba(15, 23, 42, 0.3);
+  --shadow-color-dark-ambient: rgba(15, 23, 42, 0.15);
+  // grid
+  --grid-background: #64748b;
+  --tile-background: #f1f5f9;
+  --tile-color: #0f172a;
+  --tile-highlighted-color: #fde047;
+  --tile-sequence-color: #22c55e;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: var(--font);
+  // theming
+  background: var(--background);
+  color: var(--primary-color);
+}
+
+.header {
+  @extend %flex-start-center;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--primary-contrast-color);
+  height: var(--header-height);
+  padding: 0 20px;
+  @extend .box-shadow-darker-thick;
+  position: relative;
+  z-index: 5;
+  > h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+
+.main {
+  @extend %flex-center-center;
+  align-content: start;
+  width: 100%;
+  height: calc(100% - var(--header-height));
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

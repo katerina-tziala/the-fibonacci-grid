@@ -1,0 +1,8 @@
+@mixin setFontFace($font-path, $extension, $svg) {
+  src: url("#{$font-path}/#{$extension}.eot");
+  src: url("#{$font-path}/#{$extension}.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}/#{$extension}.woff2") format("woff2"),
+    url("#{$font-path}/#{$extension}.woff") format("woff"),
+    url("#{$font-path}/#{$extension}.ttf") format("truetype"),
+    url("#{$font-path}/#{$extension}.svg##{$svg}") format("svg");
+}

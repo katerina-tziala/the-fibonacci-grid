@@ -1,0 +1,31 @@
+@use "sass:list";
+@use "sass:string";
+@use "../mixins/font-face";
+
+$font-path: "../assets/fonts/nunito-v20-latin" !default;
+$font-variations: 200, 300, 400, 500, 600, 700, 800, 900;
+
+@mixin setFontFace($extension, $weight, $style: normal) {
+  @font-face {
+    font-family: "Nunito";
+    font-display: swap;
+    font-style: $style;
+    font-weight: $weight;
+
+    @include font-face.setFontFace(
+      $font-path,
+      nunito-v20-latin-#{$extension},
+      "Nunito"
+    );
+  }
+}
+
+@mixin setFontsVariations() {
+  @each $weight in $font-variations {
+    $extension: string.quote(#{$weight});
+    @include setFontFace($extension, $weight);
+    @include setFontFace(#{$extension}italic, $weight, italic);
+  }
+}
+
+@include setFontsVariations();

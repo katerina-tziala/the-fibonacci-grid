@@ -1,0 +1,37 @@
+$scrollbar-size: 10px;
+
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  border: 1px solid var(--grid-background);
+
+  &::-webkit-scrollbar {
+    width: $scrollbar-size;
+    height: $scrollbar-size;
+  }
+  
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px var(--grid-background);
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $scrollbar-size;
+    background-color: var(--grid-background);
+  }
+
+  &::-webkit-scrollbar-corner {
+    box-shadow: inset 0 0 2px var(--grid-background);
+    background: transparent;
+  }
+}
+
+.canvas-field {
+  background-color: var(--grid-background);
+  display: block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
