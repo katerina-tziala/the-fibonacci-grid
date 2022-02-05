@@ -7,7 +7,7 @@ The Fibonacci Grid is a single player puzzle game based on the [Fibonacci Sequen
 </p>
 
 
-## Game Play
+### Game Play
 The Fibonacci Grid consists of a 50x50 grid.
 
 When the player clicks on a cell, all values in the cells in the same row and column are increased by 1 or, if a cell was empty, it is set to 1. After each change, the cells will briefly turn yellow.
