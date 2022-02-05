@@ -12,7 +12,7 @@ The Fibonacci Grid consists of a 50x50 grid.
 
 When the player clicks on a cell, all values in the cells in the same row and column are increased by 1 or, if a cell was empty, it is set to 1. After each change, the cells will briefly turn yellow.
 
-If 5 consecutive numbers in the [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_number) are next to each other (vertically or horizontally), thes cells will briefly turn green and will be cleared. The sum of the Fibonacci numbers in these cells is added to the current points of the user.
+If 5 consecutive numbers in the [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_number) are next to each other (vertically or horizontally), thes cells will briefly turn green and will be cleared. The sum of the Fibonacci numbers in these cells is added to the current points of the player.
 
 ## Prerequisites
 
