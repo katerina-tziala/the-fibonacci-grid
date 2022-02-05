@@ -41,10 +41,10 @@ Here’s a high level list of the technologies used for this app:
 3. To run the app, in the project directory run: `npm run start`
 
 ## Future Improvements
-- Give the user the option to set the prefered grid
+- Give the user the option to set the prefered dimensions for the grid
 - Give the user the option to set the number of the sequential terms that should be matched to gain points
-- Add app loader
+- Add an app loader
 - Use of a UI library like, Bootstrap or Tailwind to improve UI
 - Migrate to TypeScript
-- Set up the codigng styles for this repository and use [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/) and [ESLint](https://eslint.org/) to enforce the selected coding styles
+- Set up the coding styles for this repository and use [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/) and [ESLint](https://eslint.org/) to enforce the selected coding styles
 - Write Unit Tests
