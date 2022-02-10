@@ -19,14 +19,11 @@ export class ComponentScafold extends Component {
   // }
 
   connectedCallback() {
-    console.log('connectedCallback ComponentScafold');
     this.setStyles(STYLES);
     this.setTemplate(TEMPLATE);
   }
 
-  disconnectedCallback() {
-    console.log('disconnectedCallback ComponentScafold');
-  }
+  disconnectedCallback() {}
 
 }
 

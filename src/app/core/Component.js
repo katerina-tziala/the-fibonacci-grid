@@ -45,12 +45,8 @@ export class Component extends HTMLElement {
     return this.shadowRoot.querySelector(`.${className}`);
   }
 
-  connectedCallback() {
-    console.log('connectedCallback Component');
-  }
+  connectedCallback() {}
 
-  disconnectedCallback() {
-    console.log('disconnectedCallback Component');
-  }
+  disconnectedCallback() {}
 
 }
